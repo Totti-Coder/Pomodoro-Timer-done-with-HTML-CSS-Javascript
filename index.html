@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer | Pablo García</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="img/5417432-removebg-preview.png"
+      type="imagen/png"
+    />
+    "
+  </head>
+
+  <body>
+    <div id="timer-message">Please select a timer before getting started.</div>
+    <div id="background-image"></div>
+    <div class="container">
+      <div class="timer">
+        <h1>⏲ Pomodoro Timer</h1>
+        <div class="button-container">
+          <button class="button" id="pomodoro-session">Pomodoro</button>
+          <button class="button" id="short-break">Short Break</button>
+          <button class="button" id="long-break">Long Break</button>
+        </div>
+
+        <main>
+          <div class="pomodoro">
+            <div
+              id="pomodoro-timer"
+              class="timer-display"
+              data-duration="25.00"
+            >
+              <h1 class="time">25:00</h1>
+            </div>
+
+            <div id="short-timer" class="timer-display" data-duration="5.00">
+              <h1 class="time">5:00</h1>
+            </div>
+
+            <div id="long-timer" class="timer-display" data-duration="10.00">
+              <h1 class="time">10:00</h1>
+            </div>
+          </div>
+        </main>
+        <div class="buttons"></div>
+        <button id="start">START</button>
+        <button id="reset">RESET</button>
+        <button id="stop">STOP</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
